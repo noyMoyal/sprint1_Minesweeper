@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  background-color: bisque;
+  font-family: system-ui;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: italic;
+  text-shadow: -1px 2px 3px rgb(0, 0, 0);
+  color: lightseagreen;
+}
+
+button {
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.board-container table {
+  margin: auto;
+}
+
+.board-container button {
+  height: 48px;
+  width: 48px;
+
+  border: 1px solid black;
+  background: linear-gradient(-180deg, #8e8d8c, #0f0e0e);
+
+}
+
+.board-container button:hover {
+  background: orange
+}
+
+.board-container button.clicked {
+  background: lightblue;
+  cursor: not-allowed;
+}
+
+.difficulty-container {
+  margin: 30px;
+}
+
+.difficulty-container h4 {
+  margin: 0;
+}
+
+.difficulty-container button {
+  background: lightseagreen;
+  font-size: 1.2rem;
+  height: 40px;
+  width: 40px;
+}
+
+.difficulty-container button:hover {
+  background: darkcyan;
+}
+
+.new-game button {
+  background: linear-gradient(#464d55, #25292e);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.new-game button:hover {
+  background: linear-gradient(#25292e, #464d55);
+}
+
+.timer {
+    font-family: monospace;
+    font-size: 20px;
+}
