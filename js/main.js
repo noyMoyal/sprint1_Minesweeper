@@ -51,29 +51,32 @@ function setMinesNegsCount(board) {
     for (var j = 0; j < board[i].length; j++) {
       if (board[i][j].isMine) continue
 
-    //   getMiines Func
-	  var count = 0
-
-      for (var x = -1; x <= 1; x++) {
-        for (var y = -1; y <= 1; y++) {
-          if (x === 0 && y === 0) continue
-
-          if (i + x < 0 || i + x >= board.length) continue
-          if (j + y < 0 || j + y >= board[i].length) continue
-
-          // 		  //   'checking neg:'
-          // 		 if (i === 0 && j === 0) {
-          //    console.log('checking neighbor:', i + x, j + y);
-          // }
-
-          if (board[i + x][j + y].isMine) {
-            count++
-          }
-        }
-      }
+      var count = getMinesNegsCount(board, i, j)
       board[i][j].minesAroundCount = count
     }
   }
+}
+
+function getMinesNegsCount(board, rowIdx, colIdx) {
+  var count = 0
+
+  for (var x = -1; x <= 1; x++) {
+    for (var y = -1; y <= 1; y++) {
+      if (x === 0 && y === 0) continue
+
+      var neighborRow = rowIdx + x
+      var neighborCol = colIdx + y
+
+      if (neighborRow < 0 || neighborRow >= board.length) continue
+      if (neighborCol < 0 || neighborCol >= board[0].length) continue
+
+      if (board[neighborRow][neighborCol].isMine) {
+        count++
+      }
+    }
+  }
+
+  return count
 }
 
 function renderBoard(board) {
