@@ -1,8 +1,17 @@
 body {
+  position: relative;
+  background-image: url('https://hakolhayehudi.co.il/Uploads/2018/02/YjiIjbLoY9vUJY.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
   text-align: center;
-  background-color: bisque;
-  font-family: system-ui;
+  /* margin-left: 200px; */
+  
+ 
+
 }
+
 
 h1 {
   font-size: 40px;
@@ -27,7 +36,7 @@ button {
   width: 48px;
 
   border: 1px solid black;
-  background: linear-gradient(-180deg, #8e8d8c, #0f0e0e);
+  background: linear-gradient(-180deg, #777473, #0f0e0e);
 
 }
 
@@ -40,36 +49,17 @@ button {
   cursor: not-allowed;
 }
 
-.difficulty-container {
-  margin: 30px;
+.board-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 16px;
+  /* position: relative; */
+ margin-left: 300px;
+ margin-top: 150px;
+  display: inline-block;
 }
 
-.difficulty-container h4 {
-  margin: 0;
-}
 
-.difficulty-container button {
-  background: lightseagreen;
-  font-size: 1.2rem;
-  height: 40px;
-  width: 40px;
-}
 
-.difficulty-container button:hover {
-  background: darkcyan;
-}
 
-.new-game button {
-  background: linear-gradient(#464d55, #25292e);
-  padding: 10px 20px;
-  font-size: 18px;
-}
 
-.new-game button:hover {
-  background: linear-gradient(#25292e, #464d55);
-}
-
-.timer {
-    font-family: monospace;
-    font-size: 20px;
-}
