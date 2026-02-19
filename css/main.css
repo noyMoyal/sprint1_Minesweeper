@@ -15,8 +15,8 @@ body {
 
 h1 {
   font-size: 40px;
-  font-style: italic;
-  text-shadow: -1px 2px 3px rgb(0, 0, 0);
+  font-style: normal;
+  text-shadow: 2px 2px 6px black;
   color: lightseagreen;
 }
 
@@ -59,7 +59,10 @@ button {
   display: inline-block;
 }
 
-
-
+level-container h3 {
+  margin: 5px 0 10px;
+  font-size: 18px;
+  color: white;
+}
 
 

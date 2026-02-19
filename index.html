@@ -1,28 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Minesweeper</title>
-</head>
+  </head>
 
-<body onload="onInit()">
-   
-    
-
+  <body onload="onInit()">
     <div class="board-container">
-         <h1>Minesweeper</h1>
-        <h2> 🛟<span>💣💣💣</span></h2>
-        <table>
-            <tbody class="board"></tbody>
-        </table>
+      <h1>Minesweeper</h1>
+      <div class="level-container">
+        <h3>Level</h3>
+        <button onclick="setLevel(4, 2)">Beginner</button>
+        <button onclick="setLevel(8, 14)">Medium</button>
+        <button onclick="setLevel(12, 32)">Expert</button>
+      </div>
+
+      <h2 class="board-status"></h2>
+      <table>
+        <tbody class="board"></tbody>
+      </table>
     </div>
 
-
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
